@@ -6,7 +6,7 @@
 	?>
 	<link rel="stylesheet" type="text/css" href="Assets/mainstyle.css">
 </head>
-<body>
+<body onload="addLineBreaks();">
 	<div class="altheader">
 			<h1 class="altheader">TITLE TEXT</h1>
 			<h3 class="altheader">WEBSITE TAGLINE</h3>
@@ -23,5 +23,34 @@
 			</tr>
 		</table>
 	</div>
+	<script type="text/javascript">
+	function addLineBreaks(){
+		var textIn = getText();
+		var containsBreak=false;
+		for(var x = 0; x < textIn.length; x++){
+			if(textIn.charAt(x)=='\n'){
+				containsBreak=true;
+				break;
+			}//end if
+		}//end for
+		if(containsBreak){
+			var textArray = textIn.split("\n");
+			var textOut = "";
+			for(var x = 0; x < textArray.length; x++){
+				textOut = textOut+"<br>"+textArray[x];
+			}//end for
+			setText(textOut);
+		}//end if
+	}//end func
+
+	function getText(){//Return text from paragraph
+		var text = document.getElementsByClassName("post-text")[0].textContent;
+		return text;
+	}//end func
+
+	function setText(str){//Set paragraph text
+		document.getElementsByClassName("post-text")[0].innerHTML = str;
+	}//end func
+	</script>
 </body>
 </html>

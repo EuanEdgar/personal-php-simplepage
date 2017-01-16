@@ -21,5 +21,5 @@
 
 	echo "<h2>".$title."</h2>
 	<img class=\"large\" src=\"".$imageRef."\">
-	<p>".$text."</p>"
+	<p class=\"post-text\">".$text."</p>"
 ?>
