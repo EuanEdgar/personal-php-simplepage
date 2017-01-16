@@ -5,6 +5,7 @@
 		include 'Assets/Scripts/setTitleById.php';
 	?>
 	<link rel="stylesheet" type="text/css" href="Assets/mainstyle.css">
+	<link rel="stylesheet" type="text/css" href="Assets/post.css">
 </head>
 <body onload="addLineBreaks();">
 	<div class="altheader">

@@ -1,0 +1,42 @@
+h1.altheader{
+	text-align:center;
+	color:lightgray;
+}
+h3.altheader{
+	text-align:center;
+	color: lightgray;
+}
+div.altheader{
+	background-color: gray;
+	background-image:url("background.jpg");
+	padding-top:120px;
+	padding-bottom:50px;
+	margin-left:0px;
+	margin-top:0px;
+}
+
+div.post-short{
+	overflow-y: wrap;
+	width:300px;
+	height:110px;
+}
+
+
+p.post-text{
+	
+}
+
+h3.post-title{
+	overflow-x: scroll;
+	width:290px;
+	text-align: center;
+	margin-top:0px;
+	margin-bottom:0px;
+	margin-left:10px;
+	margin-right:10px;
+}
+
+img{
+	max-width:280px;
+	max-height: 190px;
+}
