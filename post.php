@@ -16,7 +16,7 @@
 		<table cellpadding="0" cellspacing="0" align="center" width="100%">
 			<tr>
 				<td width="10%"></td><!--Left spacer-->
-				<td width="70%" style="background-color:blue; text-align: left; padding-left: 30px;">
+				<td width="70%" style="background-color:blue; text-align: left; padding-left: 30px; padding-right:10px; height: 1000px; overflow-y: scroll">
 					<?php include'Assets/Scripts/getPost.php' ?>
 				</td><!--Main post content-->
 				<td width="20%"></td><!--Right spacer-->
