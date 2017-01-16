@@ -3,6 +3,7 @@
 <head>
 	<title>HOMEPAGE</title>
 	<link rel="stylesheet" type="text/css" href="Assets/mainstyle.css">
+	<link rel="stylesheet" type="text/css" href="Assets/home.css">
 </head>
 	<body>
 	<table cellpadding="0" cellspacing="0" border="0" width="100%" align="center;">

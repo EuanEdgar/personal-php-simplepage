@@ -4,22 +4,6 @@ body{
 	height:100%;
 	background-color:#666666;
 }
-h1.mainheader{
-	text-align:center;
-	color:lightgray;
-}
-h3.mainheader{
-	text-align:center;
-	color: lightgray;
-}
-div.mainheader{
-	background-color: gray;
-	background-image:url("background.jpg");
-	padding-top:320px;
-	padding-bottom:100px;
-	margin-left:0px;
-	margin-top:0px;
-}
 
 h1.altheader{
 	text-align:center;
@@ -36,13 +20,6 @@ div.altheader{
 	padding-bottom:50px;
 	margin-left:0px;
 	margin-top:0px;
-}
-
-div.linksbar{
-	width: 100%;
-	background-color: #101010;
-	border: 1px solid #050505;
-	color: #ffffff
 }
 
 table.post{

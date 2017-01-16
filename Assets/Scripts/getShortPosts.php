@@ -36,7 +36,7 @@
 										</div>
 									</td>
 									<td><!-- Image -->
-										<img src=\"".$imagePaths[$cid]."\">
+										<img class=\"post-image\" src=\"".$imagePaths[$cid]."\">
 									</td>
 								</tr>
 							</table>
