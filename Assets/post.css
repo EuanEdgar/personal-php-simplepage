@@ -1,3 +1,6 @@
+body{
+	height:100vh;
+}
 h1.altheader{
 	text-align:center;
 	color:lightgray;
@@ -23,7 +26,7 @@ div.post-short{
 
 
 p.post-text{
-	
+	color:white;
 }
 
 h3.post-title{
