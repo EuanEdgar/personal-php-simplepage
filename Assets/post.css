@@ -2,18 +2,18 @@ body{
 	height:100vh;
 }
 h1.altheader{
+	margin-top:120px;
 	text-align:center;
 	color:lightgray;
 }
 h3.altheader{
+	margin-bottom: 50px;
 	text-align:center;
 	color: lightgray;
 }
 div.altheader{
 	background-color: gray;
 	background-image:url("background.jpg");
-	padding-top:120px;
-	padding-bottom:50px;
 	margin-left:0px;
 	margin-top:0px;
 }

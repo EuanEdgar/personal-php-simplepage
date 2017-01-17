@@ -13,12 +13,12 @@
 		<h3 class="altheader">WEBSITE TAGLINE</h3>
 	</div><!-- End of mainheader -->
 	<?php include'Assets/Scripts/linksBar.php' ?>
-	<div width="100%" style="width:100%; height:80%; background-color:#e0e0e0; text-align: center; margin-top:2%; border: 1px solid #050505;">
+	<div width="100%" style="width:100%; height:80%; background-color:#e0e0e0; text-align: center; border: 1px solid #050505;">
 		<table cellpadding="0" cellspacing="0" width="100%">
 			<tr>
 				<td width="10%"></td><!--Left spacer-->
-				<td width="70%" style="background-color:blue; text-align: left; padding-left: 30px; padding-right:10px; overflow-y: scroll">
-					<div style="height:75vh; overflow-y: scroll;">
+				<td width="70%" style="background-color:#666666; text-align: left; padding-left: 20px; padding-right:20px; overflow-y: scroll">
+					<div style="height:70vh;">
 						<?php include'Assets/Scripts/getPost.php' ?>
 					</div>
 				</td><!--Main post content-->
