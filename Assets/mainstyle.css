@@ -8,3 +8,23 @@ td.page-bottom{
 	vertical-align: bottom;
 	height:100%;
 }
+
+h1.altheader{
+	text-align:center;
+	color:lightgray;
+}
+
+h3.altheader{
+	text-align:center;
+	color: lightgray;
+}
+
+div.altheader{
+	padding-top:120px;
+	padding-bottom: 50px;
+	width:100%;
+	background-color: gray;
+	background-image:url("background.jpg");
+	margin-left:0px;
+	margin-top:0px;
+}

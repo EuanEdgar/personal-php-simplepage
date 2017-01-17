@@ -16,9 +16,9 @@ echo	"<link rel=\"stylesheet\" type=\"text/css\" href=\"Assets/linksbar.css\">
 					<td class=\"link-spacer-2\"></td>
 
 					<td class=\"link\">
-						<a class=\"link-bar\" href=\"http://google.co.uk\">
+						<a class=\"link-bar\" href=\"http://localhost:8888/simplepage/categories.php\">
 							<div>
-								Google
+								Categories
 							</div>
 						</a>
 					</td>

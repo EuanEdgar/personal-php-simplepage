@@ -2,26 +2,6 @@ body{
 	height:100vh;
 }
 
-h1.altheader{
-	text-align:center;
-	color:lightgray;
-}
-
-h3.altheader{
-	text-align:center;
-	color: lightgray;
-}
-
-div.altheader{
-	padding-top:120px;
-	padding-bottom: 50px;
-	width:100%;
-	background-color: gray;
-	background-image:url("background.jpg");
-	margin-left:0px;
-	margin-top:0px;
-}
-
 div.main-content-body{
 	width:100%;
 	height:72vh;
@@ -54,6 +34,10 @@ h3.post-title{
 	margin-bottom:0px;
 	margin-left:10px;
 	margin-right:10px;
+}
+
+a.content-links{
+	text-decoration: none;
 }
 
 img{

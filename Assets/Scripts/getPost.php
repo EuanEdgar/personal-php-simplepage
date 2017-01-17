@@ -21,8 +21,8 @@
 		}
 	}
 
-	echo "<a href=\"localhost:8888/simplepage/categories?cat=".$category."\"><h4>".$category."</h4></a>
-	<h2>".$title."</h2>
-	<img class=\"large\" src=\"".$imageRef."\">
-	<p class=\"post-text\">".$text."</p>"
+	echo "<h4><a href=\"http://localhost:8888/simplepage/home.php\" class=\"content-links\">>Home</a> <a href=\"http://localhost:8888/simplepage/categories.php?category=".$category."\" class=\"content-links\">>".$category."</a>
+	<h2>".$title."</h2>";
+	if(strlen($imageRef)>0)echo "<img class=\"large\" src=\"".$imageRef."\">";
+	echo "<p class=\"post-text\">".$text."</p>";
 ?>

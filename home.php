@@ -15,7 +15,7 @@
 		</div><!-- End of mainheader -->
 		<?php include'Assets/Scripts/linksbar.php';?>
 		<div>
-			<table cellspacing="10" cellpadding="0" class="linksbar">
+			<table cellspacing="10" cellpadding="0">
 			<!--PHP STARTS HERE-->
 			<?php include 'Assets/Scripts/getShortPosts.php'; ?>
 			</table>

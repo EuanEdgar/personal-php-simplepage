@@ -26,7 +26,7 @@
 				echo "<tr>
 						<td width=\"25%\"></td><!--Blank column -->";
 						for($x=0;$x<2;$x++){
-				echo	"<td>
+				echo	"<td class=\"short-post\">
 							<table cellspacing=\"0\" cellpadding=\"3\" class=\"post\">
 								<tr>
 									<td>

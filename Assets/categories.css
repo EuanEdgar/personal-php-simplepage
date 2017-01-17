@@ -1,0 +1,29 @@
+table.category{
+	border: 1px solid #000000;
+	background-color: #e0e0e0;
+	width:632px;
+	height:207px;
+}
+
+a.category-name{
+	color: #808080;
+	text-decoration: none;
+	text-align: center;
+	margin-left:10px;
+	margin-right:10px;
+	font-size:16pt;
+}
+
+img.category-image{
+	min-width:2%;
+	min-height: 2%;
+	max-height: 195px;
+}
+
+td.blank-1{
+	width:20%;
+}
+
+td.blank-2{
+	width:20px;
+}
