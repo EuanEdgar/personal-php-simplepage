@@ -2,20 +2,40 @@ body{
 	height:100vh;
 }
 h1.altheader{
-	margin-top:120px;
 	text-align:center;
 	color:lightgray;
 }
 h3.altheader{
-	margin-bottom: 50px;
 	text-align:center;
 	color: lightgray;
 }
 div.altheader{
+	padding-top:120px;
+	padding-bottom: 50px;
 	background-color: gray;
 	background-image:url("background.jpg");
 	margin-left:0px;
 	margin-top:0px;
+}
+
+div.main-content-body{
+	width:100%;
+	height:80%;
+	background-color:#e0e0e0;
+	text-align: center;
+	border: 1px solid #050505;
+}
+
+	td.post-body{
+	background-color:#666666;
+	text-align: left;
+	padding-left: 20px;
+	padding-right:20px;
+	overflow-y: scroll
+}
+
+div.post-body{
+	height:70vh;
 }
 
 p.post-text{
