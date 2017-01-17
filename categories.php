@@ -29,7 +29,7 @@
 		if(strlen($category)>0)$catGiven = true;
 		else $catGiven = false;
 
-		if($catGiven)include'getPostsByCategory.php';
+		if($catGiven)include'Assets/Scripts/getPostsByCategory.php';
 		else include 'getCategories.php';
 	?>
 </body>
