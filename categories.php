@@ -29,8 +29,10 @@
 		if(strlen($category)>0)$catGiven = true;
 		else $catGiven = false;
 
+		include'Assets/Scripts/getCategoryLabel.php';
+
 		if($catGiven)include'Assets/Scripts/getPostsByCategory.php';
-		else include 'getCategories.php';
+		else include 'Assets/Scripts/getCategories.php';
 	?>
 </body>
 </html>
