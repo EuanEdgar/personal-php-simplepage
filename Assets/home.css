@@ -21,6 +21,7 @@ table.post{
 	height:10%;
 	background-color: #e0e0e0;
 	width:632px;
+	box-shadow: 6px 8px 6px #404040;
 }
 
 div.post-text{

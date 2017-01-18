@@ -20,7 +20,7 @@
 						$crow++;
 					}
 				}
-
+				
 				$cid=0;
 				for($y=0;$y<2;$y++){
 				echo "<tr>

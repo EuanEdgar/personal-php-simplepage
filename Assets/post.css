@@ -16,6 +16,7 @@ td.post-body{
 	padding-right:20px;
 	overflow-y: scroll;
 	border: 1px solid black;
+	box-shadow: 6px 8px 6px #404040;
 }
 
 div.post-body{
@@ -38,6 +39,14 @@ h3.post-title{
 
 a.content-links{
 	text-decoration: none;
+}
+
+table.links-date{
+	width:100%;
+}
+
+td.date{
+	float:right;
 }
 
 img{

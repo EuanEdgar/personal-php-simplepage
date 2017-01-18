@@ -1,5 +1,6 @@
 <?php
-	$sql = "SELECT DISTINCT Post.* FROM (SELECT DISTINCT Category, ImagePath FROM simplepage.Post WHERE NOT ImagePath='' ORDER BY DateTime DESC)AS Post GROUP BY Category";
+
+$sql = "SELECT DISTINCT Post.* FROM (SELECT DISTINCT Category, ImagePath FROM simplepage.Post WHERE NOT ImagePath='' ORDER BY DateTime DESC)AS Post GROUP BY Category";
 
 	$result = $conn->query($sql);
 
@@ -18,37 +19,36 @@
 		}
 	}
 
-
+	echo "<table cellspacing=\"10\" cellpadding=\"0\">";
 
 	$cid=0;
-	echo "<table cellspacing:\"10\" cellpadding:\"0\">";
-	for($y=0;$y<$numResults/2;$y++){
-	echo "
-		<tr>
-		<td width=\"25%\"></td><!--Blank column -->";
-		for($x=0;$x<2;$x++){
-	echo	"
-				<td>
-					<table class=\"category\">
-						<tr>
-							<td>
-								<a href=\"http://localhost:8888/simplepage/categories.php?category=".$categories[$cid]."\" class=\"category-name\"><h1>".$categories[$cid]."</h1></a>
-							</td>
-							<td>
-								<img src=\"".$imagePaths[$cid]."\" class=\"category-image\">
-							</td>
-						</tr>
-					</table>
-				</td>
-			";
-		if($x!=1)echo "<td class=\"blank-2\"></td><!--Blank column -->";
-		$cid++;
-	}//end internal for
+	for($y=0;$y<2;$y++){
+	echo "<tr>
+			<td width=\"25%\"></td><!--Blank column -->";
+			for($x=0;$x<2;$x++){
+	echo	"<td class=\"short-post\">
+				<table cellspacing=\"0\" cellpadding=\"3\" class=\"category\">
+					<tr>
+						<td>
+							<div class=\"post-text\"><!-- Scrollable, title and short text -->
+								<a class=\"post-title\" href=\"http://localhost:8888/simplepage/categories.php?category=".$categories[$cid]."\"><h3 class=\"post-title\">".$categories[$cid]."</h3></a>
+							</div>
+						</td>
+						<td><!-- Image -->
+							<img class=\"post-image\" src=\"".$imagePaths[$cid]."\">
+						</td>
+					</tr>
+				</table>
+			</td>";
+				if($x!=1)echo "<td width=\"20\"></td><!--Blank column -->";
+				$cid++;
+			}
 	echo	"<td width=\"25%\"></td><!--Blank column -->
 		</tr>
 		<tr>
-			<td height=\"10\"></td><!--Blank row-->
+			<td height=\"10\"></td>
 		";
 	}
+
 	echo "</table>";
 ?>

@@ -1,8 +1,10 @@
 table.category{
-	border: 1px solid #000000;
-	background-color: #e0e0e0;
 	width:632px;
 	height:207px;
+}
+
+h2.cat-label{
+	color:#404040;
 }
 
 a.category-name{
@@ -29,10 +31,7 @@ td.blank-2{
 }
 
 table.post{
-	border: 1px solid #000000;
-	width:100%;
 	height:10%;
-	background-color: #e0e0e0;
 	width:632px;
 }
 
@@ -53,6 +52,7 @@ a.post-title{
 
 p.post-short{
 	text-align: center;
+	color: #404040;
 	width:290px;
 }
 
@@ -63,12 +63,21 @@ img.post-image{
 }
 
 div.category-name{
-	border: 1px solid #000000;
-	background-color: #e0e0e0;
 	text-align: center;
 	padding-bottom: 20px;
 	margin:auto;
 	margin-top:20px;
 	width:600px;
 	height:50px;
+}
+
+a.categories-backlink{
+	text-decoration: none;
+	color: #404040;
+}
+
+table.category, table.post, div.category-name{/*Background colour, border and shadow*/
+	box-shadow: 6px 8px 6px #404040;
+	border: 1px solid #000000;
+	background-color: #e0e0e0;
 }
