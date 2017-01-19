@@ -34,5 +34,6 @@
 		if($catGiven)include'Assets/Scripts/getPostsByCategory.php';
 		else include 'Assets/Scripts/getCategories.php';
 	?>
+	<?php include'Assets/Scripts/bottomText.php'; ?>
 </body>
 </html>

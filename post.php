@@ -26,6 +26,7 @@
 			</tr>
 		</table>
 	</div>
+	<?php include'Assets/Scripts/bottomText.php'; ?>
 	<script type="text/javascript">
 	function addLineBreaks(){
 		var textIn = getText();
