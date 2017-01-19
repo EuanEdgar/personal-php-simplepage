@@ -4,6 +4,10 @@ body{
 	font-family: Arial, sans-serif;
 }
 
+img{
+	border: 1px solid #404040;
+}
+
 td.page-bottom{
 	text-align: center;
 	vertical-align: bottom;

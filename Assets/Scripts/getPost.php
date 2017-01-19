@@ -3,13 +3,14 @@
 	$conn;
 	include'connectToDatabase.php';
 
-	$sql = "SELECT Title, Text, ImagePath, Category, DateTime FROM simplepage.Post WHERE ID=".$id;
+	$sql = "SELECT Title, Text, ShortText, ImagePath, Category, DateTime FROM simplepage.Post WHERE ID=".$id;
 
 	$result = $conn->query($sql);
 
 	$title;
 	$imageRef;
 	$text;
+	$shortText;
 	$category;
 	$dateTime;
 
@@ -18,6 +19,7 @@
 				$title = $row["Title"];
 				$imageRef = $row["ImagePath"];
 				$text = $row["Text"];
+				$shortText = $row["ShortText"];
 				$category = $row["Category"];
 				$dateTime = $row["DateTime"];
 		}
@@ -34,6 +36,17 @@
 							</tr>
 						</table>
 	<h2>".$title."</h2>";
-	if(strlen($imageRef)>0)echo "<img class=\"large\" src=\"".$imageRef."\">";
+	if(strlen($imageRef)>0)echo "
+		<table cellspacing=\"10\" cellpading=\"0\">
+			<tr>
+				<td>
+					<img class=\"large\" src=\"".$imageRef."\">
+				</td>
+				<td>
+					<h4 classs=\"short-text\">".$shortText."</h4>
+				</td>
+			</tr>
+		</table>";
+	else echo "<h4 class=\"short-text-no-image\">".$shortText."</h4>";
 	echo "<p class=\"post-text\">".$text."</p>";
 ?>

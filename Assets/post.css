@@ -53,3 +53,13 @@ img{
 	max-width:280px;
 	max-height: 190px;
 }
+
+h4.short-text{
+	width:265px;
+	height:190px;
+	overflow-y: scroll;
+}
+
+h4.short-text-noimage{
+	width:265px;
+}
