@@ -20,20 +20,23 @@
 		<h3 class="altheader">WEBSITE TAGLINE</h3>
 	</div><!-- End of mainheader -->
 	<?php include'Assets/Scripts/linksBar.php'; ?>
-	<?php
-		$conn;
-		include'Assets/Scripts/connectToDatabase.php';
 
-		$category = $_GET["category"];
-		$catGiven;
-		if(strlen($category)>0)$catGiven = true;
-		else $catGiven = false;
+	<div style="overflow-y: scroll; height:72vh;"">
+		<?php
+			$conn;
+			include'Assets/Scripts/connectToDatabase.php';
 
-		include'Assets/Scripts/getCategoryLabel.php';
+			$category = $_GET["category"];
+			$catGiven;
+			if(strlen($category)>0)$catGiven = true;
+			else $catGiven = false;
 
-		if($catGiven)include'Assets/Scripts/getPostsByCategory.php';
-		else include 'Assets/Scripts/getCategories.php';
-	?>
+			include'Assets/Scripts/getCategoryLabel.php';
+
+			if($catGiven)include'Assets/Scripts/getPostsByCategory.php';
+			else include 'Assets/Scripts/getCategories.php';
+		?>
+	</div>
 	<?php include'Assets/Scripts/bottomText.php'; ?>
 </body>
 </html>

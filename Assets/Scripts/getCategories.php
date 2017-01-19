@@ -22,7 +22,7 @@ $sql = "SELECT DISTINCT Post.* FROM (SELECT DISTINCT Category, ImagePath FROM si
 	echo "<table cellspacing=\"10\" cellpadding=\"0\">";
 
 	$cid=0;
-	for($y=0;$y<2;$y++){
+	for($y=0;$y<$numResults/2;$y++){
 	echo "<tr>
 			<td width=\"25%\"></td><!--Blank column -->";
 			for($x=0;$x<2;$x++){
