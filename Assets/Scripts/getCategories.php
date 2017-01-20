@@ -31,7 +31,7 @@ $sql = "SELECT DISTINCT Post.* FROM (SELECT DISTINCT Category, ImagePath FROM si
 					<tr>
 						<td>
 							<div class=\"post-text\"><!-- Scrollable, title and short text -->
-								<a class=\"post-title\" href=\"http://localhost:8888/simplepage/categories.php?category=".$categories[$cid]."\"><h3 class=\"post-title\">".$categories[$cid]."</h3></a>
+								<a class=\"post-title\" href=\"categories.php?category=".$categories[$cid]."\"><h3 class=\"post-title\">".$categories[$cid]."</h3></a>
 							</div>
 						</td>
 						<td><!-- Image -->

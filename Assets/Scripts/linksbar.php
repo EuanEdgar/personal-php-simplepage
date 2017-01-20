@@ -6,7 +6,7 @@ echo	"<link rel=\"stylesheet\" type=\"text/css\" href=\"Assets/linksbar.css\">
 					<td class=\"link-spacer-1\"></td>
 
 					<td class=\"link\">
-						<a class=\"link-bar\" href=\"http://localhost:8888/simplepage/home.php\">
+						<a class=\"link-bar\" href=\"home.php\">
 							<div>
 								Home
 							</div>
@@ -16,7 +16,7 @@ echo	"<link rel=\"stylesheet\" type=\"text/css\" href=\"Assets/linksbar.css\">
 					<td class=\"link-spacer-2\"></td>
 
 					<td class=\"link\">
-						<a class=\"link-bar\" href=\"http://localhost:8888/simplepage/categories.php\">
+						<a class=\"link-bar\" href=\"categories.php\">
 							<div>
 								Categories
 							</div>
@@ -26,9 +26,9 @@ echo	"<link rel=\"stylesheet\" type=\"text/css\" href=\"Assets/linksbar.css\">
 					<td class=\"link-spacer-2\"></td>
 
 					<td class=\"link\">
-						<a class=\"link-bar\" href=\"http://google.co.uk\">
+						<a class=\"link-bar\" href=\"contact.php\">
 							<div>
-								Google
+								Contact us
 							</div>
 						</a>
 					</td>

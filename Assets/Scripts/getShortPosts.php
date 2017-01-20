@@ -31,7 +31,7 @@
 								<tr>
 									<td>
 										<div class=\"post-text\"><!-- Scrollable, title and short text -->
-											<a class=\"post-title\" href=\"http://localhost:8888/simplepage/post.php?id=".$ids[$cid]."\"><h3 class=\"post-title\">".$titles[$cid]."</h3></a>
+											<a class=\"post-title\" href=\"post.php?id=".$ids[$cid]."\"><h3 class=\"post-title\">".$titles[$cid]."</h3></a>
 											<p class=\"post-short\">".$shortText[$cid]."</p>
 										</div>
 									</td>
