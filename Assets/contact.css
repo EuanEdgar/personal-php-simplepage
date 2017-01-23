@@ -9,25 +9,66 @@ div.main-content-body{
 	margin-top: 10px;
 }
 
-td.content-body{
+td.form-body{
 	background-color:#e0e0e0;
 	text-align: left;
 	padding-left: 20px;
-	padding-right:20px;	
+	padding-right:20px;
+	overflow-y: scroll;
 	border: 1px solid black;
 	box-shadow: 6px 8px 6px #404040;
 }
 
 div.form-body{
-	height:69vh;
+	height:50vh;
+}
+
+p.form-text{
+	color:black;
 }
 
 h3.form-title{
 	overflow-x: scroll;
 	width:290px;
-	text-align: left;
-	margin-top:30px;
+	text-align: center;
+	margin-top:0px;
 	margin-bottom:0px;
 	margin-left:10px;
 	margin-right:10px;
+}
+
+a.content-links{
+	text-decoration: none;
+}
+
+div.spacer-top{
+	width:100%;
+	height:61px;
+}
+
+td.date{
+	float:right;
+}
+
+img{
+	max-width:280px;
+	max-height: 190px;
+}
+
+h4.short-text{
+	width:265px;
+	height:190px;
+	overflow-y: scroll;
+}
+
+h4.short-text-noimage{
+	width:265px;
+}
+
+td.ali-right{
+	text-align:right;
+}
+
+td.ali-left{
+	text-align:left;
 }
