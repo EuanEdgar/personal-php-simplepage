@@ -39,10 +39,21 @@ h3.post-title{
 
 a.content-links{
 	text-decoration: none;
+	color:#808080;
+}
+
+a.contact-links :hover{
+	color:#ffffff;
+	margin:50px;
+}
+
+h4 :hover{
+	color:#a0a0a0;
 }
 
 table.links-date{
 	width:100%;
+	color:#808080;
 }
 
 td.date{
@@ -60,6 +71,7 @@ h4.short-text{
 	overflow-y: scroll;
 }
 
-h4.short-text-noimage{
+h4.short-text-no-image{
 	width:265px;
+	color:#404040;
 }

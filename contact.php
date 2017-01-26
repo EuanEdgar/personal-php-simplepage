@@ -8,19 +8,30 @@
 	function check(){
 		var name = document.getElementById("name");
 		var email = document.getElementById("email");
+
+		var exp = new RegExp("^.+@.+\..+$");
 		if(name.value==""||email.value==""||text.value==""){
 			alert("Please complete all the fields");
+			return false;
+		}else if(!exp.test(email.value)){
+			alert("Your email address is not in a valid format");
 			return false;
 		}
 	}
 	</script>
 </head>
 <body>
-	<div class="altheader">
-		<h1 class="altheader">TITLE TEXT</h1>
-		<h3 class="altheader">WEBSITE TAGLINE</h3>
-	</div><!-- End of mainheader -->
-	<?php include'Assets/Scripts/linksbar.php' ?>
+	<div class="container">
+		<header>
+			<div class="altheader">
+				<h1 class="altheader">TITLE TEXT</h1>
+				<h3 class="altheader">WEBSITE TAGLINE</h3>
+			</div>
+		</header>
+
+		<?php include'Assets/Scripts/linksbar.php'; ?>
+
+	</div>
 	<?php include'Assets/Scripts/sendContact.php' ?>
 	<div width="100%" class="main-content-body">
 		<table cellpadding="0" cellspacing="0" width="100%">
@@ -58,6 +69,10 @@
 				<td width="30%"></td><!--Right spacer-->
 			</tr>
 		</table>
+	</div>
+
+	<div class="main-content-body">
+		
 	</div>
 	<?php include'Assets/Scripts/bottomText.php' ?>
 </body>

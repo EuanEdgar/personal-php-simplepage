@@ -19,36 +19,26 @@ $sql = "SELECT DISTINCT Post.* FROM (SELECT DISTINCT Category, ImagePath FROM si
 		}
 	}
 
-	echo "<table cellspacing=\"10\" cellpadding=\"0\">";
-
-	$cid=0;
+	$cid = 0;
 	for($y=0;$y<$numResults/2;$y++){
-	echo "<tr>
-			<td width=\"25%\"></td><!--Blank column -->";
+	echo "<div class=\"content-container\">
+			<div class=\"row\">";
 			for($x=0;$x<2;$x++){
-	echo	"<td class=\"short-post\">
-				<table cellspacing=\"0\" cellpadding=\"3\" class=\"category\">
-					<tr>
-						<td>
-							<div class=\"post-text\"><!-- Scrollable, title and short text -->
-								<a class=\"post-title\" href=\"categories.php?category=".$categories[$cid]."\"><h3 class=\"post-title\">".$categories[$cid]."</h3></a>
+				echo "<div class=\"column\">
+					<div class=\"column-row\">
+						<div class=\"internal-column\">
+							<div class=\"text-content\">
+								<a href=\"categories.php?category=".$categories[$cid]."\" class=\"post-title\"><h3>".$categories[$cid]."</h3></a>
 							</div>
-						</td>
-						<td><!-- Image -->
-							<img class=\"post-image\" src=\"".$imagePaths[$cid]."\">
-						</td>
-					</tr>
-				</table>
-			</td>";
-				if($x!=1)echo "<td width=\"20\"></td><!--Blank column -->";
+						</div>
+						<div class=\"internal-column\">
+							<div class=\"image\" style=\"background-image: url('".$imagePaths[$cid]."');\"></div>
+						</div>
+					</div>
+				</div>";
 				$cid++;
 			}
-	echo	"<td width=\"25%\"></td><!--Blank column -->
-		</tr>
-		<tr>
-			<td height=\"10\"></td>
-		";
+			echo "</div>
+		</div>";
 	}
-
-	echo "</table>";
 ?>

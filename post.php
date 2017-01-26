@@ -8,11 +8,17 @@
 	<link rel="stylesheet" type="text/css" href="Assets/post.css">
 </head>
 <body onload="addLineBreaks();">
-	<div class="altheader">
-		<h1 class="altheader">TITLE TEXT</h1>
-		<h3 class="altheader">WEBSITE TAGLINE</h3>
-	</div><!-- End of mainheader -->
-	<?php include'Assets/Scripts/linksBar.php' ?>
+	<div class="container">
+		<header>
+			<div class="altheader">
+				<h1 class="altheader">TITLE TEXT</h1>
+				<h3 class="altheader">WEBSITE TAGLINE</h3>
+			</div>
+		</header>
+
+		<?php include'Assets/Scripts/linksbar.php'; ?>
+
+	</div>
 	<div width="100%" class="main-content-body">
 		<table cellpadding="0" cellspacing="0" width="100%">
 			<tr>

@@ -43,7 +43,7 @@
 					<img class=\"large\" src=\"".$imageRef."\">
 				</td>
 				<td>
-					<h4 classs=\"short-text\">".$shortText."</h4>
+					<h4 class=\"short-text\">".$shortText."</h4>
 				</td>
 			</tr>
 		</table>";

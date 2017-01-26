@@ -15,13 +15,19 @@
 	<link rel="stylesheet" type="text/css" href="Assets/categories.css">
 </head>
 <body>
-	<div class="altheader">
-		<h1 class="altheader">TITLE TEXT</h1>
-		<h3 class="altheader">WEBSITE TAGLINE</h3>
-	</div><!-- End of mainheader -->
-	<?php include'Assets/Scripts/linksBar.php'; ?>
+	<div class="container">
+		<header>
+			<div class="altheader">
+				<h1 class="altheader">TITLE TEXT</h1>
+				<h3 class="altheader">WEBSITE TAGLINE</h3>
+			</div>
+		</header>
 
-	<div style="overflow-y: scroll; height:72vh;"">
+		<?php include'Assets/Scripts/linksbar.php'; ?>
+
+	</div>
+
+	<div style="overflow-y: scroll; height:72vh;">
 		<?php
 			$conn;
 			include'Assets/Scripts/connectToDatabase.php';
