@@ -49,7 +49,7 @@
 						<input type="text" name="email" id="email">
 					</div>
 					<p>How can I help you?</p>
-					<textarea name="text" style="resize:none; width:70%; height: 100px;" id="text"></textarea><br>
+					<textarea name="text" style="resize:none; width:50%; height: 100px; min-width:550px" id="text"></textarea><br>
 					<input type="submit" value="Submit">
 				</form>
 			</div>

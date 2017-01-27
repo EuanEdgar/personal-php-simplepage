@@ -80,3 +80,10 @@ td.ali-left{
 h2.contactus{
 	padding-top:10px;
 }
+
+@media screen and (max-width: 1500px){
+	textarea{
+		width:90% !important;
+		min-width:2px !important;
+	}
+}
