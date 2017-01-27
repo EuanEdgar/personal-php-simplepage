@@ -33,47 +33,10 @@
 
 	</div>
 	<?php include'Assets/Scripts/sendContact.php' ?>
-	<div width="100%" class="main-content-body">
-		<table cellpadding="0" cellspacing="0" width="100%">
-			<tr>
-				<td width="30%"></td><!--Left spacer-->
-				<td width="40%" class="form-body">
-					<div class="form-body" style="text-align: center;">
-						<?php if(strlen($_POST['name'])>0)echo "<div class=\"spacer-top\"><h2 class=\"feedback-sent\">Your feedback has been sent</h2> /div> <!--Top spacer-->"; ?>
-						<h2>Contact us:</h2>
-						<form action="contact.php" method="post" onsubmit="return check()">
-							<table cellspacing="0" cellpadding="0" style="width:100%;">
-								<tr>
-									<td class="ali-right">
-										<p>Name:&nbsp;</p>
-									</td>
-									<td class="ali-left">
-										<input type="text" name="name" id="name">
-									</td>
-								</tr>
-								<tr>
-									<td class="ali-right">
-										<p>Email address:&nbsp;</p>
-									</td>
-									<td class="ali-left">
-										<input type="text" name="email" id="email">
-									</td>
-								</tr>
-							</table>
-							<p id="a">How can I help you?</p>
-							<textarea name="text" style="resize:none; width:70%; height: 100px;" id="text"></textarea><br>
-							<input type="submit" value="Submit">
-						</form>
-					</div>
-				</td><!--Main form content-->
-				<td width="30%"></td><!--Right spacer-->
-			</tr>
-		</table>
-	</div>
 
 	<div class="main-content-body">
-		<div class="form-body" style="width:40%; margin-left:auto; margin-right:auto; background-color:#e0e0e0;">
-			<?php if(strlen($_POST['name'])>0)echo "<div class=\"spacer-top\"><h2 class=\"feedback-sent\">Your feedback has been sent</h2> /div> <!--Top spacer-->"; ?>
+		<div class="form-body" style="width:40%; margin-left:auto; margin-right:auto; background-color:#e0e0e0; box-shadow: 6px 8px 6px #404040;">
+			<?php if(strlen($_POST['name'])>0)echo "<div class=\"spacer-top\"><h2 class=\"feedback-sent\">Your feedback has been sent</h2> </div> <!--Top spacer-->"; ?>
 				<h2 class="contactus">Contact us:</h2>
 				<form action="contact.php" method="post" onsubmit="return check()">
 					<div style="display: inline-block; text-align:right;">
@@ -85,6 +48,9 @@
 						<p></p>
 						<input type="text" name="email" id="email">
 					</div>
+					<p>How can I help you?</p>
+					<textarea name="text" style="resize:none; width:70%; height: 100px;" id="text"></textarea><br>
+					<input type="submit" value="Submit">
 				</form>
 			</div>
 		</div>
