@@ -39,7 +39,7 @@
 				<td width="30%"></td><!--Left spacer-->
 				<td width="40%" class="form-body">
 					<div class="form-body" style="text-align: center;">
-						<div class="spacer-top"><?php if(strlen($_POST['name'])>0)echo "<h2>Your feedback has been sent</h2>"; ?></div><!--Top spacer-->
+						<?php if(strlen($_POST['name'])>0)echo "<div class=\"spacer-top\"><h2 class=\"feedback-sent\">Your feedback has been sent</h2> /div> <!--Top spacer-->"; ?>
 						<h2>Contact us:</h2>
 						<form action="contact.php" method="post" onsubmit="return check()">
 							<table cellspacing="0" cellpadding="0" style="width:100%;">
@@ -72,7 +72,22 @@
 	</div>
 
 	<div class="main-content-body">
-		
+		<div class="form-body" style="width:40%; margin-left:auto; margin-right:auto; background-color:#e0e0e0;">
+			<?php if(strlen($_POST['name'])>0)echo "<div class=\"spacer-top\"><h2 class=\"feedback-sent\">Your feedback has been sent</h2> /div> <!--Top spacer-->"; ?>
+				<h2 class="contactus">Contact us:</h2>
+				<form action="contact.php" method="post" onsubmit="return check()">
+					<div style="display: inline-block; text-align:right;">
+						<p>Name:&nbsp;</p>
+						<p>Email address:&nbsp;</p>
+					</div>
+					<div width="50%" style="position:relative; display: inline-block;">
+						<input type="text" name="name" id="name">
+						<p></p>
+						<input type="text" name="email" id="email">
+					</div>
+				</form>
+			</div>
+		</div>
 	</div>
 	<?php include'Assets/Scripts/bottomText.php' ?>
 </body>

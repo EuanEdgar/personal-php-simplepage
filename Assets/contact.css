@@ -46,6 +46,10 @@ div.spacer-top{
 	height:61px;
 }
 
+h2.feedback-sent{
+	padding-top: 10px;
+}
+
 td.date{
 	float:right;
 }
@@ -71,4 +75,8 @@ td.ali-right{
 
 td.ali-left{
 	text-align:left;
+}
+
+h2.contactus{
+	padding-top:10px;
 }
