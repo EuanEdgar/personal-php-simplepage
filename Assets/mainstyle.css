@@ -5,10 +5,6 @@ body{
 	margin:0px;
 }
 
-img{
-	border: 1px solid #404040;
-}
-
 .burger-nav{
 	display: none;
 }
@@ -61,12 +57,6 @@ nav a:hover{
 	color: #999999;
 }
 
-td.page-bottom{
-	text-align: center;
-	vertical-align: bottom;
-	height:100%;
-}
-
 h1.altheader{
 	text-align:center;
 	color:lightgray;
@@ -87,10 +77,6 @@ div.altheader{
 	margin-left:0px;
 	margin-top:0px;
 }
-
-
-
-
 
 a.post-title{
 	color: #808080;

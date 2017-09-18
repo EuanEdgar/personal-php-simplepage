@@ -1,5 +1,8 @@
 <?php
-echo	"<div class=\"nav-container\">
+echo	"
+		<link rel=\"stylesheet\" type=\"text/css\" href=\"Assets/Scripts/linksbar.css\">
+
+		<div class=\"nav-container\">
 			<nav>
 				<ul>
 					<li><a href=\"home.php\">Home</a></li>

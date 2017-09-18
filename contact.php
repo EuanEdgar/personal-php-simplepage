@@ -39,13 +39,12 @@
 			<?php if(strlen($_POST['name'])>0)echo "<div class=\"spacer-top\"><h2 class=\"feedback-sent\">Your feedback has been sent</h2> </div> <!--Top spacer-->"; ?>
 				<h2 class="contactus">Contact us:</h2>
 				<form action="contact.php" method="post" onsubmit="return check()">
-					<div style="display: inline-block; text-align:right;">
+					<div class="row">
 						<p>Name:&nbsp;</p>
-						<p>Email address:&nbsp;</p>
-					</div>
-					<div width="50%" style="position:relative; display: inline-block;">
 						<input type="text" name="name" id="name">
-						<p></p>
+					</div>
+					<div class="row">
+						<p>Email address:&nbsp;</p>
 						<input type="text" name="email" id="email">
 					</div>
 					<p>How can I help you?</p>
